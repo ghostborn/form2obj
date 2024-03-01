@@ -1,0 +1,28 @@
+{
+  "name": "form2obj",
+  "version": "1.0.0",
+  "description": "Zero dependency helper to serialize a form into a JavaScript object",
+  "main": "form2obj.js",
+  "scripts": {
+    "test": "jasmine-node test/*.spec.js",
+    "min": "uglifyjs form2obj.js -o form2obj.min.js -c -m --source-map url='form2obj.min.js.map'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostborn/form2obj.git"
+  },
+  "keywords": [
+    "forms",
+    "serializing"
+  ],
+  "author": "Galaxy-peng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghostborn/form2obj/issues"
+  },
+  "homepage": "https://github.com/ghostborn/form2obj#readme",
+  "dependencies": {
+    "jasmine-node": "^3.0.0",
+    "uglify-js": "^3.17.4"
+  }
+}

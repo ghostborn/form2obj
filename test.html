@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<form>
+  <input type="text" name="username" value="John">
+  <input type="text" name="address.street" value="123 Somewhere">
+  <input type="text" name="address.city" value="Durham,NC">
+  <input name="gender" type="radio" value="m" checked>
+  <input name="gender" type="radio" value="f">
+  <input name="favorites[]" type="checkbox" value="chocolate" checked>
+  <input name="favorites[]" type="checkbox" value="strawberry">
+  <input name="favorites[]" type="checkbox" value="vanilla" checked>
+</form>
+<script src="./form2obj.js"></script>
+<script>
+ const obj = form2obj(document.querySelector('form'))
+console.log(obj,'obj11111')
+</script>
+</body>
+
+</html>
